@@ -1,7 +1,7 @@
 #footer{
     padding : 4rem 8rem;
     position:relative;
-    background:#25262B;
+    background:#000;
     color:$primary__color;
     @include respond(tab-port){
         padding : 2rem ;
