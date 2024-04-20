@@ -1,0 +1,120 @@
+#categories{
+    padding:0 8rem;
+    margin-bottom: 5rem;
+    @include respond(tab-port){
+        padding: 0 2rem;
+    }
+}
+
+.categories{
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap:4rem 2rem;
+        
+        @include respond(tab-land){
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        @include respond(tab-port){
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(8,1fr);
+        }
+        
+        @include respond(phone){
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(16,1fr);;
+        }
+    }
+    .card{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-transform: capitalize;
+        background:#fff;
+        border-radius: 2rem;
+        border:1px solid #eaeaea;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 2px 2px 2px rgba(#000,.05);
+        transition:all .2s ease-in-out;
+        @include respond(tab-port){
+            
+        }
+        
+        
+        img{
+            width:100%;
+            border-radius: 2rem;
+            
+            @include respond(tab-land){
+                width:80%;
+            }
+            
+            @include respond(tab-port){
+                width:60%;
+            }
+        }
+        
+        &__desc{
+            display: flex;
+            flex-direction: column;
+            align-self: start;
+            width:100%;
+            padding:2rem 3rem;
+            gap:.5rem;
+            position: relative;
+            @include respond(tab-port){
+                align-items: center;
+                gap:1rem;
+                padding: 2rem 1rem;
+            }
+        }
+        .btn__explore{
+            border:none;
+            outline:none;
+            background:$primary__color;
+            font-size: 1.2rem;
+            border-radius: 1rem;
+            position:absolute;
+            top:50%;
+            transform: translateY(-50%);
+            color:#595959;
+            padding: .8rem 2rem;
+            // right:1rem;
+            align-self: flex-end;
+            box-shadow: 2px 2px 2px rgba(#000,.15);
+            transition: all .1s ease-in;
+            cursor :pointer;
+            border : 1px solid transparent;
+
+            @include respond(tab-port){
+                align-items: center;
+                gap:1rem;
+                width:80%;
+                position: static;
+                transform: translateX(0);
+                padding : 1rem 2rem;
+                align-self: center;
+            }
+
+            &:hover{
+                box-shadow: 2px 2px 5px rgba(#000,.25);
+                transform:translateY(calc(-2px - 50%));
+                border:1px solid #000;
+                color:#000;
+            }
+        }
+
+        &:hover{
+            box-shadow: 2px 2px 5px rgba(#000,.25);
+            border: 1px solid #bababa;
+            transform:translateY(-2px);
+        }
+
+        
+    }
+}
