@@ -35,3 +35,38 @@ body{
     text-align: center;
     margin : 5rem 0 ;
 }
+
+.chat__with_us{
+    position: fixed;
+    font-size: 4rem;
+    color :#5afa5a;
+    bottom:3rem;
+    z-index: 100000;
+    cursor: pointer;
+    padding:1rem;
+    right:0;
+    background:#8fa8;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    overflow: hidden;
+    translate:75%;
+    transition:all .2s ease-in-out;
+
+    p{
+        font-size: 1.6rem;
+        visibility: hidden;
+        text-decoration: underline;
+    }
+    &:hover{
+        translate:0;
+        background:#585;
+    }
+    &:hover p{
+        visibility: visible;
+    }
+}
+
+
