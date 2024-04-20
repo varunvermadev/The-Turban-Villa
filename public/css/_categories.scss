@@ -35,11 +35,9 @@
         flex-direction: column;
         text-transform: capitalize;
         background:#fff;
-        border-radius: 2rem;
-        border:1px solid #eaeaea;
         overflow: hidden;
         position: relative;
-        box-shadow: 2px 2px 2px rgba(#000,.05);
+        box-shadow: 4px 4px 4px rgba(#000,.05);
         transition:all .2s ease-in-out;
         @include respond(tab-port){
             
@@ -99,13 +97,20 @@
                 transform: translateX(0);
                 padding : 1rem 2rem;
                 align-self: center;
+                
             }
 
             &:hover{
-                box-shadow: 2px 2px 5px rgba(#000,.25);
+                box-shadow: 4px 4px 8px rgba(#000,.35);
                 transform:translateY(calc(-2px - 50%));
                 border:1px solid #000;
                 color:#000;
+
+                @include respond(tab-port){
+                    transform: translateX(-2px);
+                }
+
+                
             }
         }
 
