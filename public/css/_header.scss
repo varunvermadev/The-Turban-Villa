@@ -18,9 +18,9 @@
             justify-content: center;
             align-items: center;
 
-
+            
             &__logo{
-
+                
                 width:6rem;
                 height:6rem;
                 img{
@@ -28,10 +28,13 @@
                     height:100%;
                 }
             }
-
+            
             &__name{
                 font-size: 3.5rem;
                 font-weight: 900;
+                @include respond(phone){
+                    font-size: 2.5rem;
+                }
 
                 span{
                     color: $primary__color;
