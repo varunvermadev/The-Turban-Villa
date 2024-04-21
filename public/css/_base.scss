@@ -40,12 +40,13 @@ body{
     position: fixed;
     font-size: 4rem;
     color :#5afa5a;
+    background:#585;
+
     bottom:3rem;
     z-index: 100000;
     cursor: pointer;
     padding:1rem;
     right:0;
-    background:#8fa8;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -59,10 +60,16 @@ body{
         font-size: 1.6rem;
         visibility: hidden;
         text-decoration: underline;
+
+        &:hover{
+            transform: translateY(-2px);
+
+        }
     }
     &:hover{
         translate:0;
         background:#585;
+
     }
     &:hover p{
         visibility: visible;
