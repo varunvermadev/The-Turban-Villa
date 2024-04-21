@@ -1,6 +1,6 @@
 #carousel{
     position:relative;
-    height:90vh;
+    height:75vh;
     @include respond(phone){
         height: 50vh;
     }

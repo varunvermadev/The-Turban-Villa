@@ -36,12 +36,19 @@ body{
     margin : 5rem 0 ;
 }
 
+.secondary__heading{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin:2.5rem 0 ;
+}
+
 .chat__with_us{
     position: fixed;
     font-size: 4rem;
     color :#5afa5a;
     background:#585;
-
+    border-radius: 2rem 0 0 2rem;
     bottom:3rem;
     z-index: 100000;
     cursor: pointer;

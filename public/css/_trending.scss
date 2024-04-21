@@ -1,0 +1,123 @@
+    #expertise{
+        padding : 0 8rem;
+    }
+    
+    .expertise{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap:1.5rem;
+
+        h1{
+            align-self: start;
+                @include respond(tab-land){
+        align-self: center;
+    }
+            @include respond(tab-port){
+                align-self: center;
+            }
+            
+        }
+    }
+    .main__expertise{
+        position: relative;
+        margin:0 auto;
+
+        &>*{
+            width:28rem;
+            height:24rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:2px solid $primary__color;
+            font-size: 3rem;
+            box-shadow: .5rem .5rem 2rem rgba(#000,0.15);
+            font-weight: 600;
+            position:relative;
+            border-radius: 12px;   
+            transition : all .3s;
+            cursor:pointer;      
+
+            
+            @include respond(tab-land){
+                width:25rem;
+                height:20rem;
+            }
+            @include respond(tab-port){
+                width:50vw;
+                height:20rem;
+
+                &:not(:last-child){
+                    margin-bottom: 4rem;
+                }
+            }
+
+        }
+
+
+        &>*:hover{
+            background:#fff;
+            z-index:2;
+            transform:scale(1.05);
+            box-shadow: 1rem 1rem 1rem rgba(#000,0.25);
+            
+        }
+
+
+        &--interiors{
+            margin-left:22rem;
+            margin-top:-8rem;
+                        
+            @include respond(tab-land){
+                margin-left: 20rem;
+                margin-top: -6rem;
+            }
+            @include respond(tab-port){
+                margin:0;
+            }
+        }
+        &--landscape{
+            margin-left:44rem;
+            margin-top:-8rem;
+            position:relative;
+            @include respond(tab-land){
+                margin-left: 40rem;
+                margin-top: -6rem;
+            }
+            @include respond(tab-port){
+                margin:0;
+            }
+
+        }
+
+
+        &--planning::before,
+        &--landscape::before{
+            position:absolute;
+            content:'';
+            width:10vw;
+            height:3rem;
+            background:linear-gradient(to right,$primary__color,#000);
+            border-radius: 5px;
+            @include respond(tab-port){
+                width:20vw;
+                height:3rem;
+            }
+        }
+
+        &--landscape::before{
+
+                bottom:0;
+                transform:translateY(1.5rem)
+
+        }
+        &--planning::before{
+
+            top:0;
+            transform:translateY(-1.5rem);
+
+
+        }
+
+        
+    }
