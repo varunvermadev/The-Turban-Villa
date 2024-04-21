@@ -1,6 +1,9 @@
 #reachUs{
     padding: 0 8rem;
     margin: 4rem 0;
+    @include respond(tab-port){
+    padding : .5rem 2rem;
+    }
 }
 
 .reachus{
@@ -9,6 +12,10 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @include respond(tab-port){
+            flex-direction: column;
+            gap: 5rem;
+        }
     }
 
     &__insta,&__whatsapp{
