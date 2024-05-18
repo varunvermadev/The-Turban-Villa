@@ -1,0 +1,17 @@
+.products{
+    padding : 4rem 8rem;
+    position:relative;
+    @include respond(tab-port){
+        padding : 2rem ;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:2rem;
+
+        img{
+            width:80%;
+        }
+    }
+}

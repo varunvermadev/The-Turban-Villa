@@ -1,13 +1,12 @@
 class FeatureView {
-
-    parentEl = document.querySelector('.categories__container');
+    parentEl;
     data;
 
-    render(data) {
+  render(data) {
         this.data = data;
         const markup = this.data.map(category => {
             const path = category.categoryImg + category.categoryName.toLowerCase().split(' ').join('_') + '.jpg';
-            return `<div class="card">
+          return `<div class="card">
         <img src="${path}" >
         <div class="card__desc">
 
@@ -15,7 +14,7 @@ class FeatureView {
 
           <span>${category.categoryName}</span>
           <h4 class="card__price">${category.categoryPrice}</h4>
-          <button class="btn btn__explore">
+          <button data-category="${category.categoryName.toLowerCase().split(' ').join('')}" class="btn btn__explore">
             Explore
           </button>
         </div>
@@ -27,7 +26,11 @@ class FeatureView {
 
         this.parentEl.insertAdjacentHTML('afterbegin', markup);
         
-    }
+  }
+  
+  addHandlerFeatures(handler) {
+    this.parentEl.addEventListener('click', handler);
+  }
 
     #clear() {
         this.parentEl.innerHTML = '';

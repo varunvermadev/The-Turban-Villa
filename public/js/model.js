@@ -1,7 +1,8 @@
 // taking data and sending it to the  controller
 
 export  const state = {
-    categories: []
+    categories: [],
+    markup : {}
 }
 
 export const getData = async function () {
@@ -17,5 +18,17 @@ export const getData = async function () {
 
 }
 
+const getPage = async function (page = 'home') {
+    
+    const res = await fetch('../../templates/'+page+'.html');
+    const markup = await res.text();
+    state.markup[page] = markup;
+}
+
+
+const pages = ['home', 'aboutus', 'product'];
+pages.forEach(el => {
+    getPage(el);
+})
 
 
