@@ -39,7 +39,7 @@ class ProductView{
             return;
         }
         for (let i = 1; i <= n.products; i++){
-            arr.push(`./public/assets/${data}/${data} (${i}).jpeg`);
+            arr.push(`./assets/${data}/${data} (${i}).jpeg`);
         }
         const markup = `<header id="header">
     <nav class="navbar">
@@ -84,7 +84,7 @@ class ProductView{
             <h2>The <span>Turban</span> Villa</h2>
         </div>
         <div class="footer__logo">
-            <img src="./public/assets/logo.png" alt="">
+            <img src="./assets/logo.png" alt="">
         </div>
     </div>
     <div class="footer__wrapper">
