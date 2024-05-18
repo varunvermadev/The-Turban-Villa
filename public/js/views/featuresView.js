@@ -11,9 +11,9 @@ class FeatureView {
         <div class="card__desc">
           <span>${category.categoryName}</span>
           <h4 class="card__price">${category.categoryPrice}</h4>
-          <button href='#top' data-category="${category.categoryName.toLowerCase().split(' ').join('')}" class="btn btn__explore">
+          <a href='#top' data-category="${category.categoryName.toLowerCase().split(' ').join('')}" class="btn btn__explore">
             Explore
-          </button>
+          </a>
         </div>
 
       </div>`

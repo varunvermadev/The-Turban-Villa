@@ -17,7 +17,10 @@
     &__desc {
         .heading__tertiary {
             margin-bottom: 3rem;;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            span{
+                color:$primary__color;
+            }
         }
 
         p{
@@ -31,5 +34,8 @@
 
     &__img{
         width:40%;
+        @include respond(phone){
+            width:100%;
+                }
     }
 }

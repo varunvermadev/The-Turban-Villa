@@ -34,8 +34,9 @@ async function controlFeatures(e) {
     controlApp();
 }
 async function controlProducts(category) {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
     productView.renderProducts(category);
+    appView.hamburger();
     controlApp();
 }
 
@@ -45,3 +46,4 @@ async function controlApp() {
 }
 
 loadApp();
+// window.addEventListener('load', loadApp);

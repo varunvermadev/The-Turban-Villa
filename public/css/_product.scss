@@ -4,14 +4,39 @@
     @include respond(tab-port){
         padding : 2rem ;
     }
-
+    
     .grid{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
+        display: flex;
         gap:2rem;
-
+        flex-wrap: wrap;
+        justify-content: center;
+        // display: grid;
+        // grid-template-columns: repeat(4,1fr);
+        // gap:2rem;
+        // @include respond(tab-land){
+        //     grid-template-columns : repeat(3,1fr) ;
+        // }
+        // @include respond(tab-port){
+        //     grid-template-columns : repeat(2,1fr) ;
+        //     gap:1rem;
+        // }
+        // @include respond(phone){
+        //     grid-template-columns : 1fr ;
+        // }
+        
+        
+        
         img{
-            width:80%;
+            width:20%;
+        @include respond(tab-land){
+            width:30%;
+        }
+        @include respond(tab-port){
+            width:40%;
+        }
+        @include respond(phone){
+            width:50%;
+        }
         }
     }
 }
