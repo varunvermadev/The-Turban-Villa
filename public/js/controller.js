@@ -38,6 +38,7 @@ async function controlProducts(category) {
     productView.renderProducts(category);
     controlApp();
 }
+
 async function controlApp() {
     appView.addHandlerPage(controlPage);
     featuresView.addHandlerFeatures(controlFeatures);

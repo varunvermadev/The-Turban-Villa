@@ -4,8 +4,9 @@ class AppView {
         this.parentEl.innerHTML = '';
         this.parentEl.insertAdjacentHTML('beforeend', markup); 
         console.log(page);
-        if(page == 'home')
+        if (page == 'home')
             this.carousel();
+        this.hamburger();
     }
 
     carousel() {
