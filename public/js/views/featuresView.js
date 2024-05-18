@@ -9,12 +9,9 @@ class FeatureView {
           return `<div class="card">
         <img src="${path}" >
         <div class="card__desc">
-
-
-
           <span>${category.categoryName}</span>
           <h4 class="card__price">${category.categoryPrice}</h4>
-          <button data-category="${category.categoryName.toLowerCase().split(' ').join('')}" class="btn btn__explore">
+          <button href='#top' data-category="${category.categoryName.toLowerCase().split(' ').join('')}" class="btn btn__explore">
             Explore
           </button>
         </div>

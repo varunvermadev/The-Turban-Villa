@@ -30,11 +30,11 @@ async function controlFeatures(e) {
     const btn = e.target.closest('.btn__explore');
     console.log(btn);
     if (!btn) return;
-    
     controlProducts(btn.dataset.category);
     controlApp();
 }
 async function controlProducts(category) {
+    window.scrollTo(0, 0);
     productView.renderProducts(category);
     controlApp();
 }
