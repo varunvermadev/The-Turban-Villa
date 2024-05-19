@@ -45,5 +45,4 @@ async function controlApp() {
     featuresView.addHandlerFeatures(controlFeatures);
 }
 
-loadApp();
 window.addEventListener('load', loadApp);
