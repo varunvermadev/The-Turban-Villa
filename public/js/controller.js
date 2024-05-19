@@ -46,4 +46,4 @@ async function controlApp() {
 }
 
 loadApp();
-// window.addEventListener('load', loadApp);
+window.addEventListener('load', loadApp);

@@ -3,9 +3,7 @@ class AppView {
     async render(markup,page) {
         this.parentEl.innerHTML = '';
         this.parentEl.insertAdjacentHTML('beforeend', markup); 
-        console.log(page);
-        if (page == 'home')
-            this.carousel();
+        window.addEventListener('load', this.carousel);
         this.hamburger();
     }
 
