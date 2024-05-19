@@ -52,13 +52,13 @@ class ProductView{
             </a>
         </div>
         <ul class="list">
-            <a href="#home" class="list__links active">
+            <a href="#home" class="list__links ">
                 <li class="list__items ">Home</li>
             </a>
             <a href="#aboutus" class="list__links">
                 <li class="list__items ">About Us</li>
             </a>
-            <a href="#categories" class="list__links products">
+            <a href="#categories" class="list__links products active">
                 <li class="list__items ">Products</li>
             </a>
             <a href="https://wa.me/message/FGSUJKSJWXK5E1" class="list__links" target="_blank">
