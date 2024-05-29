@@ -49,20 +49,22 @@ body{
     font-size: 4rem;
     color :#5afa5a;
     background:#585;
-    border-radius: 2rem 0 0 2rem;
+    border-radius: 0 2rem 2rem 0;
     bottom:3rem;
     z-index: 100000;
     cursor: pointer;
     padding:1rem;
-    right:0;
+    left:0;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5rem;
     overflow: hidden;
-    translate:75%;
+    text-align: right;
+    translate: -75%;
     transition:all .2s ease-in-out;
+
 
     p{
         font-size: 1.6rem;

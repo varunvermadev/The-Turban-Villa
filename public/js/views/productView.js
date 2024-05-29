@@ -75,7 +75,7 @@ class ProductView{
 <section class="products" id="products">
     <h2 class="primary__heading">${data.toUpperCase()}</h2>
     <div class="grid">
-    ${arr.map(el=>`<img src="${el}">`).join('')}
+    ${arr.map(el=>`<div class='product__img'><img src="${el}"></div>`).join('')}
     </div>
 </section>
 <footer class="footer" id="footer">
