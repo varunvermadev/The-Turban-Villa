@@ -41,7 +41,11 @@ class ProductView{
         for (let i = 1; i <= n.products; i++){
             arr.push(`./assets/${data}/${data} (${i}).jpeg`);
         }
-        const markup = `<header id="header">
+        const markup = `
+        <a href="#home" class="back__to__home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+    <header id="header">
     <nav class="navbar">
         <div class="brand">
             <a href="#home" class="brand__logo">
@@ -71,7 +75,7 @@ class ProductView{
             <div class="bar"></div>
         </div>
     </nav>
-</header>
+    </header>
 <section class="products" id="products">
     <h2 class="primary__heading">${data.toUpperCase()}</h2>
     <div class="grid">
@@ -124,6 +128,7 @@ class ProductView{
         </p>
       </div> -->
     </div>
+    
 </footer>`
         this.parentEl.innerHTML = '';
         this.parentEl.insertAdjacentHTML('beforeend', markup);

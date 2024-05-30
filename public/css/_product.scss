@@ -31,21 +31,21 @@
             border-radius: 2rem;
             box-shadow: 2px 2px 5px rgba(#000,.25);
         }
-        
+    
         img{
             width:100%;
             aspect-ratio: 1/1.125;
             border-radius: inherit;
             
-        @include respond(tab-land){
-            width:30%;
-        }
-        @include respond(tab-port){
-            width:40%;
-        }
-        @include respond(phone){
-            width:50%;
-        }
+        // @include respond(tab-land){
+        //     width:30%;
+        // }
+        // @include respond(tab-port){
+        //     width:40%;
+        // }
+        // @include respond(phone){
+        //     width:50%;
+        // }
         }
     }
 }
