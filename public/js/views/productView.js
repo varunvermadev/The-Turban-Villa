@@ -6,7 +6,7 @@ class ProductView{
     },
     {
         category: 'fullvoile',
-        products : 80
+        products : 90
     },
     {
         category: 'cparna',
